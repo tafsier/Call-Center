@@ -10,7 +10,13 @@ services:
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
       - N8N_BASIC_AUTH_PASSWORD=admin123
-      - WEBHOOK_URL=https://your-n8n-subdomain.up.railway.app
+      - WEBHOOK_URL=https://call-center-production-334e.up.railway.app/
       - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
       - NODE_ENV=production
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=yamabiloo.proxy.rlwy.net
+      - DB_POSTGRESDB_PORT=41661
+      - DB_POSTGRESDB_DATABASE=railway
+      - DB_POSTGRESDB_USER=postgres
+      - DB_POSTGRESDB_PASSWORD=${DB_PASSWORD}
